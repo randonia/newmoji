@@ -21,7 +21,6 @@ const CHANNELS = TARGET_CHANNELS.split(',');
 })();
 
 app.event('emoji_changed', async ({ event, context, client }) => {
-  console.log(JSON.stringify(context));
   if (event.subtype === 'add') {
     for (let cIdx = 0; cIdx < CHANNELS.length; cIdx++) {
       const channel = CHANNELS[cIdx];
