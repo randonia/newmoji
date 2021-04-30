@@ -1,0 +1,27 @@
+{
+  "name": "newmoji",
+  "version": "1.0.0",
+  "description": "New Emoji Socket handler for Slack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "dotenv-load nodemon --inspect index.js",
+    "serve": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randonia/newmoji.git"
+  },
+  "author": "Ryan Andonian <ryanandonian@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/randonia/newmoji/issues"
+  },
+  "homepage": "https://github.com/randonia/newmoji#readme",
+  "dependencies": {
+    "@slack/bolt": "^3.3.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "dotenv-load": "^2.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
